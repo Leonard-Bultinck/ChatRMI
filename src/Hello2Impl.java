@@ -28,7 +28,6 @@ public class Hello2Impl implements Hello2{
     @Override
     public String sayHello(Info_itf client, Accounting_itf type) throws RemoteException {
         if (type.getNumberOfCalls() >= 1) {
-            type.numberOfCalls(type.getNumberOfCalls() - 1);
             String tmp;
             BufferedReader br = new BufferedReader(new InputStreamReader(historyI));
             try {

@@ -73,8 +73,8 @@ javac -d classes -cp .:classes:lib/Hello.jar:lib/Info_itf.jar:lib/ClientImpl.jar
 javac -d classes -cp .:classes:lib/Hello.jar:lib/HelloImpl.jar:lib/Info_itf.jar:lib/HelloClient.jar:lib/ClientImpl.jar:lib/Hello2.jar:lib/Accounting_itf.jar:lib/Registry_itf.jar:lib/Hello2Impl.jar:lib/RegistryImpl.jar:lib/StringRMI_itf.jar::lib/ClientPush_itf.jar src/HelloServer.java
 
 
-#Setup 
+#Setup
+killall rmiregistry
 export CLASSPATH=/home/leonard/Cours/M1/IDS/Tuto_rmi/lib/Hello.jar:/home/leonard/Cours/M1/IDS/Tuto_rmi/lib/Info_itf.jar:/home/leonard/Cours/M1/IDS/Tuto_rmi/lib/Hello2.jar:/home/leonard/Cours/M1/IDS/Tuto_rmi/lib/Accounting_itf.jar:/home/leonard/Cours/M1/IDS/Tuto_rmi/lib/Registry_itf.jar:/home/leonard/Cours/M1/IDS/Tuto_rmi/lib/StringRMI_itf.jar:/home/leonard/Cours/M1/IDS/Tuto_rmi/lib/ClientPush_itf.jar
-
 rmiregistry &
 
